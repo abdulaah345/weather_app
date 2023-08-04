@@ -41,7 +41,8 @@ class weathermodels {
       return 'assets/images/snow.png';
     } else if (state == 'Light Rain' ||
         state == 'Heavy Rain' ||
-        state == 'Showers') {
+        state == 'Showers' ||
+        state == 'Patchy rain possible') {
       return 'assets/images/rainy.png';
     } else if (state == 'Heavy Rain') {
       return 'assets/images/cloudy.png';
@@ -61,7 +62,7 @@ class weathermodels {
         state == 'Heavy Rain' ||
         state == 'Showers') {
       return Colors.blue;
-    } else if (state == 'Heavy Rain') {
+    } else if (state == 'Heavy Rain' || state == 'Patchy rain possible') {
       return Colors.blueGrey;
     } else if (state == 'thunderstorm' || state == 'Thunder') {
       return Colors.blue;
